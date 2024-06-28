@@ -2,7 +2,6 @@ package pclient;
 
 import plib.Mn;
 import plib.MnFactory;
-import plib.MnImple;
 import plib.Sample;
 
 public class Main {
@@ -19,7 +18,5 @@ public class Main {
 	
 		Mn mn = MnFactory.create();
 		mn.mndiamondsmile();
-		MnImple mnImple = (MnImple)MnFactory.create();
-		mnImple.mndance();
 	}
 }
