@@ -6,6 +6,6 @@ public class MnImple implements Mn{
 	}
 	@Override
 	public void mndiamondsmile() {
-		System.out.println("DIAMOND SMILE");
+		System.out.println("DIAMOND SMILE(^o^)");
 	}
 }

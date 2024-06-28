@@ -1,5 +1,8 @@
 package pclient;
 
+import plib.Mn;
+import plib.MnFactory;
+import plib.MnImple;
 import plib.Sample;
 
 public class Main {
@@ -13,5 +16,10 @@ public class Main {
 		
 		Sample sample = new Sample();
 		System.out.println(sample.getKoro());
+	
+		Mn mn = MnFactory.create();
+		mn.mndiamondsmile();
+		MnImple mnImple = (MnImple)MnFactory.create();
+		mnImple.mndance();
 	}
 }
