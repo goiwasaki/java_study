@@ -1,5 +1,10 @@
 package pclient;
 
+import java.util.Collections;
+import java.util.List;
+
+import comp.Item;
+import comp.SampleItemsFactory;
 import plib.Mn;
 import plib.MnFactory;
 import plib.Sample;
@@ -18,5 +23,11 @@ public class Main {
 	
 		Mn mn = MnFactory.create();
 		mn.mndiamondsmile();
+		
+		List<Item> items = SampleItemsFactory.create();
+		Collections.sort(items);
+		for(Item item : items) {
+			System.out.println(item.getName());
+		}
 	}
 }
