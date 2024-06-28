@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 import comp.Item;
+import comp.Item.PriceComparator;
 import comp.SampleItemsFactory;
 import plib.Mn;
 import plib.MnFactory;
@@ -25,7 +26,7 @@ public class Main {
 		mn.mndiamondsmile();
 		
 		List<Item> items = SampleItemsFactory.create();
-		Collections.sort(items);
+		Collections.sort(items, new PriceComparator());
 		for(Item item : items) {
 			System.out.println(item.getName());
 		}
